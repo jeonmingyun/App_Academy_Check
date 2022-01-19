@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/baseBgWhite"
+    android:padding="24dp">
+
+    <RelativeLayout
+        android:id="@+id/user_info_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/selected_name_hint"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/name"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/name"
+            android:hint="@string/selected_gender_hint"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/name"
+            android:layout_toEndOf="@id/gender"
+            android:hint="@string/selected_code_hint"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:hint="@string/selected_phone_num_hint" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/user_info_container"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/today_start_time"
+                style="@style/today_check_time"
+                android:layout_weight="1"
+                android:gravity="center|end"
+                android:hint="@string/today_start_time_hint"
+                android:maxWidth="100dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="@string/aToB" />
+
+            <TextView
+                android:id="@+id/today_end_time"
+                style="@style/today_check_time"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:hint="@string/today_end_time_hint"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

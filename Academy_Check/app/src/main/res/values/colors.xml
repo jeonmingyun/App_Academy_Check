@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5b3ee8</color>
+    <color name="colorPrimaryDark">#4933b3</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="baseBgGray">#ededed</color>
+    <color name="baseTxtGray">#8d8d8d</color>
+    <color name="baseBgWhite">#ffffff</color>
+    <color name="dateIconBgGray">#ededed</color>
+    <color name="headArrowBtnGray">#6f6f6f</color>
+    <color name="dateActionLine">#e1e1e1</color>
+    <color name="checkTimeText">#00a507</color>
+</resources>

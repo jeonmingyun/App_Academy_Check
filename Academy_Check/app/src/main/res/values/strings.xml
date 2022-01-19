@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">등원 확인</string>
+    <string name="login_academy_hint">학원 이름</string>
+    <string name="login_code_hint">코드 번호</string>
+    <string name="login_pass_hint">비밀번호</string>
+    <string name="auto_login">자동 로그인</string>
+    <string name="save_id">학원 이름 저장</string>
+    <string name="login_btn">로그인</string>
+    <string name="show_list">리스트 보기</string>
+    <string name="start_time_label">등원 :</string>
+    <string name="end_time_label">하원 :</string>
+    <string name="start_time_hint">아직 등원하지 않았습니다.</string>
+    <string name="end_time_hint">아직 하원하지 않았습니다.</string>
+    <string name="start_check_btn">등원</string>
+    <string name="end_check_btn">하원</string>
+    <string name="selected_name_hint">이름</string>
+    <string name="selected_gender_hint">성별</string>
+    <string name="selected_code_hint">고유코드</string>
+    <string name="selected_phone_num_hint">전화번호</string>
+    <string name="select_date">날짜 선택</string>
+    <string name="name_label">성 명</string>
+    <string name="gender_label">성 별</string>
+    <string name="phone_num">연락처</string>
+    <string name="user_add_btn">등록</string>
+    <string name="student_txt">학생</string>
+    <string name="teacher_txt">선생님</string>
+    <string name="user_name_et_hint">성명을 입력해주세요.</string>
+    <string name="user_phone_num_et_hint">숫자만 입력해주세요.</string>
+    <string name="user_parent">학부모</string>
+    <string name="user_parent_code_et_hint">학부모 코드를 입력해주세요.</string>
+    <string name="parent_txt">학부모</string>
+    <string name="popup_check_list">출석 보기</string>
+    <string name="popup_edit_info">정보 수정</string>
+    <string name="today_start_time_hint">등원</string>
+    <string name="today_end_time_hint">하원</string>
+    <string name="aToB">~</string>
+    <string name="student_is_empty_txt">학생이 없습니다.</string>
+    <string name="teacher_is_empty_txt">선생님이 없습니다.</string>
+    <string name="parent_is_empty_txt">부모님이 없습니다.</string>
+
+    <string name="transition_container" translatable="false">selected_user_container</string>
+
+    <string name="tel1">1</string>
+    <string name="tel2">2</string>
+    <string name="tel3">3</string>
+    <string name="tel4">4</string>
+    <string name="tel5">5</string>
+    <string name="tel6">6</string>
+    <string name="tel7">7</string>
+    <string name="tel8">8</string>
+    <string name="tel9">9</string>
+    <string name="tel0">0</string>
+
+
+</resources>

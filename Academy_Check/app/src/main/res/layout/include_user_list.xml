@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- animation view -->
+    <RelativeLayout
+        android:id="@+id/user_sub_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/card_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_head_height">
+
+                    <ImageView
+                        android:id="@+id/card_head_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:src="@drawable/up_arrow" />
+
+                    <ImageButton
+                        android:id="@+id/user_add_btn"
+                        android:layout_width="@dimen/add_btn_size"
+                        android:layout_height="@dimen/add_btn_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/base_side_spacer"
+                        android:background="@drawable/add_btn_bg"
+                        android:src="@drawable/add_btn" />
+
+                </RelativeLayout>
+
+                <!-- animation recycler view -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/current_date_txt"
+                    android:layout_below="@id/card_head">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/card_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        tools:listitem="@layout/item_user_list" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/current_date_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="2020-01-30(금)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

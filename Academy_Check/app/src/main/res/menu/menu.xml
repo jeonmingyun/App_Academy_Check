@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/logout"
+        android:title="로그아웃" />
+    <item
+        android:id="@+id/parent_list"
+        android:title="학부모 리스트" />
+    <item
+        android:id="@+id/teacher_list"
+        android:title="선생님 리스트" />
+    <item
+        android:id="@+id/tablet"
+        android:title="테블릿 등하원 체크" />
+</menu>

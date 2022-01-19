@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:padding="@dimen/base_side_spacer"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"/>
+
+    <EditText
+        android:id="@+id/login_academy"
+        style="@style/login_edit_txt"
+        android:layout_below="@id/app_name"
+        android:singleLine="true"
+        android:hint="@string/login_academy_hint"
+        android:text="종로입시학원"/>
+
+    <EditText
+        android:id="@+id/login_code"
+        style="@style/login_edit_txt"
+        android:layout_below="@id/login_academy"
+        android:singleLine="true"
+        android:hint="@string/login_code_hint"
+        android:text="a1328b"/>
+
+    <RelativeLayout
+        android:id="@+id/auto_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_code">
+
+        <CheckBox
+            android:id="@+id/auto_login_icon"
+            style="@style/login_ck_btn_icon"/>
+
+        <TextView
+            android:id="@+id/auto_login_txt"
+            style="@style/login_ck_btn_txt"
+            android:layout_toEndOf="@id/auto_login_icon"
+            android:text="@string/auto_login"/>
+
+    </RelativeLayout>
+
+    <!-- 입력값으로 패스워드가 추가 되면 사용 -->
+    <RelativeLayout
+        android:id="@+id/save_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_code"
+        android:layout_toEndOf="@id/auto_login">
+
+        <CheckBox
+            android:id="@+id/save_id_icon"
+            style="@style/login_ck_btn_icon"/>
+
+        <TextView
+            android:id="@+id/save_id_txt"
+            style="@style/login_ck_btn_txt"
+            android:layout_toEndOf="@id/save_id_icon"
+            android:text="@string/save_id"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="@string/login_btn"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

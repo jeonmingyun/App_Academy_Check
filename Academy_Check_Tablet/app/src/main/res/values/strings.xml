@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">등하원 확인</string>
+    <string name="tel1">1</string>
+    <string name="tel2">2</string>
+    <string name="tel3">3</string>
+    <string name="tel4">4</string>
+    <string name="tel5">5</string>
+    <string name="tel6">6</string>
+    <string name="tel7">7</string>
+    <string name="tel8">8</string>
+    <string name="tel9">9</string>
+    <string name="tel0">0</string>
+</resources>

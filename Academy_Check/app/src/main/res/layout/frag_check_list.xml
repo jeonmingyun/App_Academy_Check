@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseBgGray"
+    android:gravity="center"
+    android:padding="@dimen/base_side_spacer">
+
+    <LinearLayout
+        android:id="@+id/check_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radius_bg"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/check_list_head"
+            layout="@layout/item_user_list" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/base_sub_side_spacer"
+            android:paddingEnd="@dimen/base_sub_side_spacer">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/check_list_date"
+                android:background="@color/dateActionLine" />
+
+            <TextView
+                android:id="@+id/check_list_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/select_date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/check_list_date"
+                android:background="@color/dateActionLine" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/check_list_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/base_sub_side_spacer"
+            android:layout_marginEnd="@dimen/base_sub_side_spacer"
+            android:overScrollMode="never"
+            tools:listitem="@layout/item_check_list" />
+
+    </LinearLayout>
+
+</RelativeLayout>

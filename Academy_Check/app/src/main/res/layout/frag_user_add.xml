@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".act.MainAct">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:padding="@dimen/base_side_spacer">
+
+            <RadioGroup
+                android:id="@+id/user_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/content_spacer_large"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/student_radio_btn"
+                    style="@style/add_user_radio_btn"
+                    android:layout_width="wrap_content"
+                    android:checked="true"
+                    android:text="@string/student_txt" />
+
+                <RadioButton
+                    android:id="@+id/teacher_radio_btn"
+                    style="@style/add_user_radio_btn"
+                    android:text="@string/teacher_txt" />
+
+                <RadioButton
+                    android:id="@+id/parent_radio_btn"
+                    style="@style/add_user_radio_btn"
+                    android:text="@string/parent_txt" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/user_name_label"
+                style="@style/add_user_txt_label"
+                android:layout_below="@id/user_radio_group"
+                android:text="@string/name_label" />
+
+            <EditText
+                android:id="@+id/user_name"
+                style="@style/add_user_txt"
+                android:layout_alignTop="@id/user_name_label"
+                android:layout_toEndOf="@id/user_name_label"
+                android:hint="@string/user_name_et_hint" />
+
+            <TextView
+                android:id="@+id/user_gender_label"
+                style="@style/add_user_txt_label"
+                android:layout_below="@id/user_name_label"
+                android:text="@string/gender_label" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/user_gender_label"
+                android:layout_marginBottom="@dimen/content_spacer_large"
+                android:layout_toEndOf="@id/user_gender_label"
+                android:background="@color/baseBgWhite">
+
+                <Spinner
+                    android:id="@+id/user_gender"
+                    style="@style/add_user_spinner" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/user_phone_num_label"
+                style="@style/add_user_txt_label"
+                android:layout_below="@id/user_gender_label"
+                android:text="@string/phone_num" />
+
+            <EditText
+                android:id="@+id/user_phone_num"
+                style="@style/add_user_txt"
+                android:layout_alignTop="@id/user_phone_num_label"
+                android:layout_toEndOf="@id/user_phone_num_label"
+                android:hint="@string/user_phone_num_et_hint"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/user_parent_code_lable"
+                style="@style/add_user_txt_label"
+                android:layout_below="@id/user_phone_num"
+                android:text="@string/user_parent" />
+
+            <EditText
+                android:id="@+id/user_parent_code"
+                style="@style/add_user_txt"
+                android:layout_alignTop="@id/user_parent_code_lable"
+                android:layout_toEndOf="@id/user_parent_code_lable"
+                android:hint="@string/user_parent_code_et_hint"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/user_add_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/user_parent_code_lable"
+                android:layout_marginTop="@dimen/content_spacer_large"
+                android:background="#000000"
+                android:text="@string/user_add_btn"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/side_navi" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

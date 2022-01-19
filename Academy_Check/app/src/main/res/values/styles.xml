@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="noAnimTheme" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="login_edit_txt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/content_height</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:layout_marginBottom">@dimen/content_spacer_large</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <style name="login_ck_btn_icon">
+        <item name="android:layout_width">@dimen/check_icon_size</item>
+        <item name="android:layout_height">@dimen/check_icon_size</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/check_icon_btn</item>
+    </style>
+
+    <style name="login_ck_btn_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <style name="time_check_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">3dp</item>
+        <item name="android:textSize">@dimen/selected_user_info</item>
+    </style>
+
+    <style name="time_check">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/selected_user_info</item>
+        <item name="android:textColor">@color/checkTimeText</item>
+    </style>
+
+    <style name="time_check_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/time_check_btn</item>
+    </style>
+
+    <style name="add_user_txt_label">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">@dimen/content_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginEnd">@dimen/content_spacer_large</item>
+        <item name="android:layout_marginBottom">@dimen/content_spacer_large</item>
+    </style>
+
+    <style name="add_user_txt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/content_height</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:layout_marginBottom">@dimen/content_spacer_large</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <style name="add_user_spinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/content_height</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+    <style name="add_user_radio_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="today_check_time">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/checkTimeText</item>
+    </style>
+</resources>

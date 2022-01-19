@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="base_side_spacer">20dp</dimen>
+    <dimen name="check_icon_size">15dp</dimen>
+    <dimen name="radius_bg_corner">8dp</dimen>
+    <dimen name="circle_bg_corner">200dp</dimen>
+    <dimen name="radius_btn_corner">200dp</dimen>
+    <dimen name="base_sub_side_spacer">20dp</dimen>
+    <dimen name="selected_user_name">20sp</dimen>
+    <dimen name="selected_user_info">17sp</dimen>
+    <dimen name="head_arrow_btn_width">90dp</dimen>
+    <dimen name="check_list_date_size">50dp</dimen>
+    <dimen name="add_btn_size">50dp</dimen>
+    <dimen name="content_height">50dp</dimen>
+    <dimen name="content_spacer_mid">7dp</dimen>
+    <dimen name="content_spacer_large">10dp</dimen>
+    <dimen name="card_head_height">60dp</dimen>
+
+    <dimen name="inner_item_offset">16dp</dimen>
+    <dimen name="outer_head_height">0dp</dimen>
+</resources>

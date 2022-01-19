@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="@dimen/base_sub_side_spacer"
+    android:paddingBottom="@dimen/base_sub_side_spacer">
+
+    <LinearLayout
+        android:id="@+id/check_date_container"
+        android:layout_width="@dimen/check_list_date_size"
+        android:layout_height="@dimen/check_list_date_size"
+        android:layout_centerVertical="true"
+        android:background="@drawable/check_list_date_bg"
+        android:gravity="center"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/check_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18일"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/check_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="금"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/check_date_container">
+
+        <TextView
+            android:id="@+id/started_time_label"
+            style="@style/time_check_label"
+            android:text="@string/start_time_label" />
+
+        <TextView
+            android:id="@+id/started_time"
+            style="@style/time_check"
+            android:layout_alignTop="@id/started_time_label"
+            android:layout_toEndOf="@id/started_time_label"
+            android:hint="@string/start_time_hint" />
+
+        <TextView
+            android:id="@+id/ended_time_label"
+            style="@style/time_check_label"
+            android:layout_below="@id/started_time_label"
+            android:text="@string/end_time_label" />
+
+        <TextView
+            android:id="@+id/ended_time"
+            style="@style/time_check"
+            android:layout_alignTop="@id/ended_time_label"
+            android:layout_toEndOf="@id/ended_time_label"
+            android:hint="@string/end_time_hint"
+            android:text="" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
