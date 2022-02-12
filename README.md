@@ -1,4 +1,6 @@
 ### 구성 : 앱 2개
+### APP 주요 기술 : Android Studio, Java, SQLite
+
 ### Academy_Check
  > 학원 등하원 관리 앱
  > 학원 원장님, 선생님, 부모님 계정에 따라 보이는 view가 다름
