@@ -1,3 +1,4 @@
+### 서비스 : 학원 등하원 관리
 ### 구성 : 앱 2개
 ### APP 주요 기술 : Android Studio, Java, SQLite
 
